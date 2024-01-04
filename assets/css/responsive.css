@@ -1,0 +1,22 @@
+/*=== Extra large screen===*/
+@media screen and (max-width : 1200px) {
+    /*====== header start ======*/
+    /*====== header end ======*/
+}
+
+
+/*=== Large screen===*/
+@media screen and (max-width : 992px) {
+
+}
+
+
+/*=== Medium screen===*/
+@media screen and (max-width : 768px) {
+
+}
+
+/*=== Small screen ===*/
+@media screen and (max-width: 576px) {
+    
+}

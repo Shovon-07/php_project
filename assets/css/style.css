@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--dark_100 : #28292b;
+	--dark_50 : #333333;
+	--white_100 : #fff;
+	--i_clr : rgb(72, 71, 71);
+	--nav_bg : #1b1a1af0;
+	--main_clr : #ff7700;
+	--main_shadow : rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+	/* font  */
+	--primery-font : poppins;
+}
+
+.body.light {
+	--dark_100 : #ffffff;
+	--dark_50 : #fff5df;
+	--white_100 : #000;
+	--i_clr : rgb(72, 71, 71);
+	--nav_bg : #1b1a1af0;
+	--main_clr : #ff5200;
+	--main_shadow : rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+	/* font  */
+	--primery-font : poppins;
+}
+
+/*====== custome scroll bar start ======*/
+::-webkit-scrollbar {
+	width: 5px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+	background: linear-gradient(165deg, rgba(0,0,0,0.9360119047619048) 0%, rgba(0,0,0,0.5662640056022409) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(165deg, rgba(5,66,51,0.9360119047619048) 22%, rgba(192,217,251,1) 53%, rgba(9,74,60,0.5662640056022409) 86%);
+}
+/*====== custome scroll bar end ======*/
+.body {
+	background: var(--dark_100);
+	transition: 0.5s all;
+}
+
+li {
+	list-style: none;
+}
+
+li a {
+	text-decoration: none;
+}
+
+.span {
+	color: var(--main_clr);
+}
+
+.content {
+	color: var(--white_100);
+}
+
+.my_btn {
+	padding: 8px 50px;
+	color: var(--white_100);
+	border: 1px solid var(--white_100);
+	border-radius: 10px;
+	background: transparent;
+	transition: all 0.5s;
+}
+
+.my_btn:hover {
+	background: var(--main_clr);
+}
+
+.search_box {
+	border: 1px solid var(--white_100);
+}
+
+.search_box input {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--white_100);
+}
+
+.search_box .sercht_btn {
+	background: transparent;
+	color: var(--white_100);
+}
+
+/*====== header start ======*/
+.header {
+	background: var(--dark_50);
+	padding: 10px 0;
+}
+
+.header .menu, .nav_list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header .logo img {
+	width: 40px;
+	border-radius: 50%;
+	margin-top: 5px;
+}
+
+.header .nav_list li {
+	margin: 0 30px;
+}
+
+.header .nav_list li a {
+	font-size: 18px;
+	color: var(--white_100);
+	transition: 0.5s all ease;
+}
+
+.header .nav_list li a:hover {
+	color: var(--main_clr);
+}
+/*====== header end ======*/
+
+/*====== theme toogler start ======*/
+.theme_switch {
+	top: 80px;
+	right: 20px;
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	background-color: var(--dark_50);
+	padding: 20px;
+	border-radius: 50%;
+	box-shadow: var(--main_shadow);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.theme_switch .theme {
+	cursor: pointer;
+}
+
+.theme_switch .theme i {
+	color: var(--white_100);
+	font-size: 20px;
+}
+
+.theme_switch #sun {
+	display: none;
+}
+/*====== theme toogler end ======*/
+
+/*====== home start ======*/
+.home .content {
+	margin-top: 150px;
+}
+/*====== home end ======*/
+
+/*====== employee_reg start ======*/
+.employee_list .content {
+	margin-top: 30px;
+}
+
+.employee_list .table {
+	color: var(--white_100);
+	text-align: center;
+}
+
+.employee_list .table tr, .table td {
+	border: 1px solid var(--white_100);
+}
+
+.employee_list .action_btn {
+	color: var(--white_100);
+}
+/*====== employee_reg end ======*/
+
+/*====== reg_em start ======*/
+.reg_em .card, .up_prof .card {
+	background: var(--dark_50);
+	box-shadow: var(--main_shadow);
+}
+
+.reg_em .input_box {
+	border-bottom: 1px solid var(--white_100);
+}
+
+.reg_em .input_box input {
+	border: none;
+	outline: none;
+	color: var(--white_100);
+	background: transparent;
+	letter-spacing: 1px;
+	width: 100%;
+}
+/*====== reg_em end ======*/
+
+/*====== up_prof start ======*/
+.up_prof .settings_input {
+}
+
+.up_prof .settings_input input {
+	width: 100%;
+	color: var(--white_100);
+	/* margin-left: 100px; */
+	background: transparent;
+	outline: none;
+	border: 1px solid var(--white_100);
+}
+
+/*====== up_prof end ======*/
+
+/*====== login & create page start ======*/
+.login .card {
+	background: var(--dark_50);
+	box-shadow: var(--main_shadow);
+}
+
+.login .login_txt {
+	color: var(--white_100);
+}
+
+.login .card label {
+	color: var(--white_100);
+}
+
+.login .card .input_box {
+	border-bottom: 1px solid var(--white_100);
+}
+
+.login .card input {
+	outline: none;
+	border: none;
+	color: var(--white_100);
+	letter-spacing: 1px;
+	background: transparent;
+	box-shadow: none;
+}
+
+.login .card .my_btn {
+	color: var(--white_100);
+	background: var(--i_clr);
+	box-shadow: var(--main_shadow);
+}
+
+.login .card .my_btn:hover {
+	background: var(--dark_50);
+}
+
+.login .card .eye i {
+	color: var(--white_100);
+	cursor: pointer;
+}
+
+.login .card .eye #eye_cls {
+	display: none;
+}
+
+.login .card .crt_acc_txt {
+	color: var(--white_100);
+}
+
+.login .card .crt_acc_link {
+	color: var(--main_clr);
+}
+/*====== login & create page end ======*/
